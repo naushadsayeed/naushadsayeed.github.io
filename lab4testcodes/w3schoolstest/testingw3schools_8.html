@@ -18,8 +18,11 @@ $(document).ready(function(){
     if(timeCount == 60){
         $("#image_with_description").load("img_4_with_description.txt");
     }
-    timeCount++
+    if(timeCount > 80){
+        timeCount=0;
+    }
     $("#time").text(timeCount+" s");
+    timeCount++
     }, 1000); 
 });
 </script>
