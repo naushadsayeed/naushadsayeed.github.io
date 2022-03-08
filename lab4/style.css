@@ -1,9 +1,0 @@
-/*The CSS here is just for putting the images and the paragraph (<p>) texts in the center*/
-#image_with_description {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-p, h2{
-	text-align: center;
-}

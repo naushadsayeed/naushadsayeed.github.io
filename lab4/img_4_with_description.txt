@@ -1,2 +1,0 @@
-<div id="#image_with_description"><img src="./images/grad_photo.jpg" alt="George Brown grad photo" style="height:300px"></div>
-<p>This was my graduation photo from George Brown. I graduated from there in 2016.</p>
