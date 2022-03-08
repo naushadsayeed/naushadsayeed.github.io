@@ -27,7 +27,8 @@
             $("#image_with_description").load("img_4_with_description.txt");
         }
         if(timeCount > 80){
-            timeCount=0;
+            $("#image_with_description").load("img_1_with_description.txt");
+            timeCount=0; 
         }
         $("#time").text(timeCount+" s");
         timeCount++
