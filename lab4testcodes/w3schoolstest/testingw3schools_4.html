@@ -7,10 +7,10 @@ $(document).ready(function(){
 	var timeCount=0;
 	setInterval(function() {
     if (timeCount == 3){ /*If 20 seconds passed.*/
-    $("#div1").load("demo_test.txt");
+        $("#div1").load("demo_test.txt");
     }
     if(timeCount == 6){
-    $("#div1").load("img_1_with_description.txt");
+        $("#div1").load("img_1_with_description.txt");
     }
     timeCount++
     $("#time").text(timeCount+" s");
