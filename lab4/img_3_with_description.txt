@@ -1,0 +1,2 @@
+<div id="#image_with_description"><img src="./images/George_Brown_Casa_Loma.jpeg" alt="George Brown Casa Loma" style="height:300px"></div>
+<p>Before Ryerson, I was a in George Brown to get my diploma and that's where I got to learn about HTML/CSS for the first time. I also learned other programming languages such as Java, JavaScript, PHP and C#. All of my courses happened in the Casa Loma Campus of George Brown.</p>
