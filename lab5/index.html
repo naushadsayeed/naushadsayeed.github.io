@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> 
+        <link rel="stylesheet" type="text/css" href="style.css"> <!--Links this HTML page with the CSS file-->
+    
+        <title>Lab 5 - Naushad Sayeed</title>
+    
+        <!--JQuery/Ajax with JSON starts here-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $.ajax({
+                type: "GET",
+                url: "external.json",
+                success:function(response)
+                {
+                    $("#name_and_picture").append("<h2>"+response.name+"</h2> <img src='"+response.imageURL+"'>")
+                    $("#year_column_1").append("<b>Year</b>")
+                    $("#year_column_2").append(response.year)
+                    $("#engine").append("<h4>Engine</h4>")
+                    $("#type_column_1").append("<b>Type</b>")
+                    $("#type_column_2").append(response.engine.type)
+                    $("#size_column_1").append("<b>Size</b>")
+                    $("#size_column_2").append(response.engine.size)
+                    $("#configuration_column_1").append("<b>Configuration</b>")
+                    $("#configuration_column_2").append(response.engine.configuration)
+                    $("#brakes").append("<h4>Brakes</h4>")
+                    $("#front_column_1").append("<b>Front</b>")
+                    $("#front_column_2").append(response.brakes.front)
+                    $("#back_column_1").append("<b>Back</b>")
+                    $("#back_column_2").append(response.brakes.back)
+                }
+            });
+        </script>
+        <!--JQuery/Ajax with JSON ends here-->
+    </head>
+    <body>
+        <h1>Lab 5 - Naushad Sayeed</h1>
+        <!-- Gutters grids starts here-->
+        <div class="container px-lg-5">
+            <div class="row mx-lg-n5">
+                <div class="col py-3 px-lg-5 border bg-light" id="name_and_picture"></div>
+            </div>
+        </div>
+        <div class="container px-lg-5">
+            <div class="row mx-lg-n5">
+                <div class="col py-3 px-lg-5 border bg-light" id="year_column_1"></div>
+                <div class="col py-3 px-lg-5 border bg-light" id="year_column_2"></div>
+            </div>
+        </div>
+        <div class="container px-lg-5">
+            <div class="row mx-lg-n5">
+                <div class="col py-3 px-lg-5 border bg-light" id="engine"></div>
+            </div>
+        </div>
+        <div class="container px-lg-5">
+            <div class="row mx-lg-n5">
+                <div class="col py-3 px-lg-5 border bg-light" id="type_column_1"></div>
+                <div class="col py-3 px-lg-5 border bg-light" id="type_column_2"></div>
+            </div>
+            <div class="row mx-lg-n5">
+                <div class="col py-3 px-lg-5 border bg-light" id="size_column_1"></div>
+                <div class="col py-3 px-lg-5 border bg-light" id="size_column_2"></div>
+            </div>
+            <div class="row mx-lg-n5">
+                <div class="col py-3 px-lg-5 border bg-light" id="configuration_column_1"></div>
+                <div class="col py-3 px-lg-5 border bg-light" id="configuration_column_2"></div>
+            </div>
+        </div>
+        <div class="container px-lg-5">
+            <div class="row mx-lg-n5">
+                <div class="col py-3 px-lg-5 border bg-light" id="brakes"></div>
+            </div>
+        </div>
+        <div class="container px-lg-5">
+            <div class="row mx-lg-n5">
+                <div class="col py-3 px-lg-5 border bg-light" id="front_column_1"></div>
+                <div class="col py-3 px-lg-5 border bg-light" id="front_column_2"></div>
+            </div>
+            <div class="row mx-lg-n5">
+                <div class="col py-3 px-lg-5 border bg-light" id="back_column_1"></div>
+                <div class="col py-3 px-lg-5 border bg-light" id="back_column_2"></div>
+            </div>
+        </div>
+        <!-- Gutters grids ends here-->
+    </body>
+</html> 
+

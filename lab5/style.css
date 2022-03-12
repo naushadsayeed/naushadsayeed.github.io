@@ -1,0 +1,14 @@
+/*The CSS here is just for putting the images and the paragraph (<p>) texts in the center*/
+body
+{
+	background: #F1F1F1;
+}
+h1, h2, h4{
+	text-align: center;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
