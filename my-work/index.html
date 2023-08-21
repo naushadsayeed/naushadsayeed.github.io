@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <!--SOURCE FOR THESE CODES: https://getbootstrap.com/docs/5.3/examples/ -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Naushad Sayeed, Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title>My Work | Naushad Sayeed</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
+
+    
+
+    
+<!--VERY IMPORTANT: This line below is so it can use the stuff in the "assets" folder downloaded from Bootstrap to make sure it properly styles the navbar. -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> 
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      /* Show it is fixed to the top */
+      body {
+        min-height: 75rem;
+        padding-top: 4.5rem;
+      }
+
+      /*This is for the collapsed list, based on this source: https://www.w3schools.com/howto/howto_js_collapsible.asp */
+      .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+
+      .active, .collapsible:hover {
+        background-color: #555;
+      }
+
+      .collapsible:after {
+        content: '\002B';
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+
+      .active:after {
+        content: "\2212";
+      }
+
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+      }
+    </style>
+
+  </head>
+  <body>
+    
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">Naushad Sayeed</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="../my-work/index.html">My Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../contact/index.html">Contact</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>-->
+
+      </ul>
+      <!--<form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>-->
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <div class="bg-light p-5 rounded">
+    <h1 style='text-align:center'>MY WORK</h1>
+    <p class="lead">The work I'm sharing contains labs, assignments, and projects I did for my post-secondary schools.</p>
+    <!--Useful source for collapse: https://www.w3schools.com/howto/howto_js_collapsible.asp  -->
+    <h2>Toronto Metropolitan University (TMU)</h2>
+    <button class="collapsible">Web Systems Development (CCPS 530) - Winter 2022</button>
+    <div class="content">
+      <!--My CCPS 530 Work List Starts Here-->
+      <p class="lead">I completed this course with a grade of A+.</p>
+      <p class="lead"><b>Labs</b></p>
+      <p class="lead">(All my lab grades are 100%)</p>
+      <p class="lead">My Lab 1 & 2 contains the design of my old portfolio.</p>
+      <ul>
+        <li><p class="lead"><b>Lab 1</b></p>
+          <ul class="square">
+            <li><p class="lead"><a href="./lab1/Instructions_CCPS530Lab1.pdf" target="_blank">Instructions (Lab 1)</a></p></li> 
+            <li><p class="lead"><a href="./lab1/webpage_files_lab1/index.html" target="_blank">Web Page (Lab 1)</a></p></li>
+            <li><p class="lead"><a href="./lab1/TechnicalReport_CCPS530Lab1.pdf" target="_blank">Technical Report (Lab 1)</a></p></li>
+          </ul>
+        </li>
+        <li><p class="lead"><b>Lab 2</b></p>
+          <ul class="square">
+            <li><p class="lead"><a href="./lab2/Instructions_CCPS530Lab2.pdf" target="_blank">Instructions (Lab 2)</a></p></li>
+            <li><p class="lead"><a href="./lab2/webpage_files_lab2/index.html" target="_blank">Web Page (Lab 2)</a></p></li>
+            <li><p class="lead"><a href="./lab2/TechnicalReport_CCPS530Lab2.pdf" target="_blank">Technical Report (Lab 2)</a></p></li>
+          </ul>
+        </li>
+        <li><p class="lead"><b>Lab 3</b></p>
+          <ul class="square">
+            <li><p class="lead"><a href="./lab3/Instructions_CCPS530Lab3.pdf" target="_blank">Instructions (Lab 3)</a></p></li>
+            <li><p class="lead"><a href="./lab3/webpage_files_lab3/index.html" target="_blank">Web Page (Lab 3)</a></p></li>
+            <li><p class="lead"><a href="./lab3/TechnicalReport_CCPS530Lab3.pdf" target="_blank">Technical Report (Lab 3)</a></p></li>
+          </ul>
+        </li>
+        <li><p class="lead"><b>Lab 4</b></p>
+          <ul class="square">
+            <li><p class="lead"><a href="./lab4/Instructions_CCPS530Lab4.pdf" target="_blank">Instructions (Lab 4)</a></p></li>
+            <li><p class="lead"><a href="./lab4/webpage_files_lab4/index.html" target="_blank">Web Page (Lab 4)</a></p></li>
+            <li><p class="lead"><a href="./lab4/TechnicalReport_CCPS530Lab4.pdf" target="_blank">Technical Report (Lab 4)</a></p></li>
+          </ul>
+        </li>
+        <li><p class="lead"><b>Lab 5</b></p>
+          <ul class="square">
+            <li><p class="lead"><a href="./lab5/Instructions_CCPS530Lab5.pdf" target="_blank">Instructions (Lab 5)</a></p></li>
+            <li><p class="lead"><a href="./lab5/webpage_files_lab5/index.html" target="_blank">Web Page (Lab 5)</a></p></li>
+            <li><p class="lead"><a href="./lab5/TechnicalReport_CCPS530Lab5.pdf" target="_blank">Technical Report (Lab 5)</a></p></li> 
+          </ul>
+        </li>
+        <li><p class="lead"><b>Lab 6</b></p>
+          <ul class="square">
+            <li><p class="lead"><a href="./lab6/Instructions_CCPS530Lab6.pdf" target="_blank">Instructions (Lab 6)</a></p></li>
+            <li><p class="lead"><a href="./lab6/How_To_Open_and_Run_Lab_6.pdf" target="_blank">How To Open and Run Lab 6</a></p></li>
+            <li><p class="lead"><a href="./lab6/TechnicalReport_CCPS530Lab6.pdf" target="_blank">Technical Report (Lab 6)</a></p></li> 
+          </ul>
+        </li>
+        <li><p class="lead"><b>Lab 7</b></p>
+          <ul class="square">
+            <li><p class="lead"><a href="./lab7/Instructions_CCPS530Lab7.pdf" target="_blank">Instructions (Lab 7)</a></p></li>
+            <li><p class="lead"><a href="./lab7/TechnicalReport_CCPS530Lab7.pdf" target="_blank">Technical Report (Lab 7)</a></p></li> 
+          </ul>
+        </li>
+        <li><p class="lead"><b>Lab 8</b></p>
+          <p class="lead"><b>(Download the files from here and open the technical reports from Labs 7 and 8)</b></p>
+          <ul class="square">
+            <li><p class="lead"><a href="./lab8/Instructions_CCPS530Lab8.pdf" target="_blank">Instructions (Lab 8)</a></p></li>
+            <li><p class="lead"><a href="https://github.com/naushadsayeed/naushadsayeed.github.io/tree/main/lab8/lab_8_files" target="_blank">Download the Lab 8 Files Here</a></p></li>
+            <li><p class="lead"><a href="./lab8/TechnicalReport_CCPS530Lab8.pdf" target="_blank">Technical Report (Lab 8)</a></p></li>
+          </ul>
+        </li>
+      </ul>
+      <p class="lead"><b>Midterm Project</b></p>
+      <ul>
+        <li><p class="lead"><a href="./midterm_project/Project_description.pdf" target="_blank">Instructions/Description (Midterm Project)</a></p></li>
+        <li><p class="lead"><a href="./midterm_project/webpage_midtermproject/index.html" target="_blank">Web Page (Midterm Project)</a></p></li>
+        <li><p class="lead">Grade: 27/30 (90%)</p></li>
+      </ul>
+      <p class="lead"><b>Final Exam</b></p>
+      <ul>
+        <li><p class="lead"><a href="./final_exam/Instructions_CCPS530FinalExam.pdf">Instructions (Final Exam)</a></p></li>
+        <li><p class="lead"><a href="https://www.dropbox.com/s/m6hdzdig3lovkar/naushadsayeed_finalexam.zip?dl=0" target="_blank">Download the Final Exam Files Here</a></p></li>
+        <li><p class="lead"><a href="./final_exam/FinalExam_Technical_Report.pdf" target="_blank">Technical Report (Final Exam)</a></p></li>
+        <li><p class="lead"><a href="./final_exam/CCPS530_FinalExam_Presentation.mp4" target="_blank">Video Presentation (Final Exam)</a></p></li>
+        <li><p class="lead">Grade: 50/50 (100%)</p></li>
+      </ul>  
+      <!--My CCPS 530 Work List Ends Here-->
+    </div> 
+    <button class="collapsible">Social Media & Communication (CMN 288) - Winter 2022</button>
+    <div class="content">
+      <!--My CMN 288 Work Starts Here-->
+      <p class="lead"><b>Social Media Campaign</b></p>
+      <a href="https://www.instagram.com/6ixvscovid19/" target="_blank"><img class="SocialMediaCampaign" src="../images/6ixvscovid19-screenshots/MobileHome-6ixvscovid19.JPG" alt="Social Media Campaign Screenshot" style="min-width: 150px; height: auto; display: block; width: 20%">
+      <p class="lead">@6ixvscovid19 on Instagram</p></a>
+      <p class="lead">As the screenshot above shows, my group social media campaign on Instagram (@6ixvscovid19) where I created two Instagram posts with Canva. The Campaign is related to Covid in Toronto.
+        <br><br>Here are my two Instagram posts (If "Post 1" or "Post 2" isn't loading, please refresh this page):</p>
+        <a href="https://www.instagram.com/p/CbvTGm4On84/ " target="_blank">
+          <p class="lead">Post 1</p>
+          <img class="Post1" src="../images/6ixvscovid19-screenshots/Post-1.png" alt="Post 1 Screenshot" style="min-width: 200px; height: auto; display: block; width: 50%;">
+        </a>
+        <br>
+        <a href="https://www.instagram.com/p/CbvU3YCuNhA/ " target="_blank">
+          <p class="lead">Post 2</p>
+          <img class="Post2" src="../images/6ixvscovid19-screenshots/Post-2.png" alt="Post 2 Screenshot" style="min-width: 200px; height: auto; display: block; width: 50%;">
+        </a>
+        <p class="lead"><b>I got a grade of an A for this campaign with my whole group.</b></p>
+        <!--My CMN 288 Work Ends Here-->
+    </div>
+
+    <br>   
+    <h2>George Brown College (GBC)</h2>
+    <button class="collapsible">Game Development (COMP 3064) - Fall 2015</button>
+    <div class="content">
+      <p class="lead"><b>Individual Assignment</b></p>
+      <p class="lead">For my Individual Assignment in COMP 3064, I created a prototype of a crossover game with Unity Game Engine and the game I created is called "Link in Mario World". This crossover game is about Toon Link in Mario World and doing the exact same thing as Mario in the games.</p>
+      <p class="lead"><a href="./IndividualAssignment_COMP3064Fall2015/index.html" target="_blank">CLICK HERE TO PLAY
+        <img class="Main Menu Picture" src="../images/Link_in_Mario_World_Logo.png" alt="Link_in_Mario_World_Logo.png" style="min-width: 200px; width: 17%; height: auto; display: block;">
+      </a></p>
+      <p class="lead">NOTE: Just to clarify, the game I made is just for an individual assignment and not officially connected to the Nintendo. I'm an independent developer who was a college student, and I created this out of my passion for the original games.</p>
+    </div>
+    <button class="collapsible">Web Programming (COMP 1231) - Winter 2014</button>
+    <div class="content">
+      <!--My JavaScript Project Starts Here-->
+      <p class="lead"><b>JavaScript Assignment</b></p>
+			<p class="lead">For my JavaScript assignment, I did a project that involves making a table on a webpage. It works when the user enters the number of columns and rows, and the color of the headings and element boxes and then it prints out table on a webpage.</p>
+			<p class="lead"><a href="./view-javascript-project/index.html" target="_blank">Click Here to View Project</a></p>
+      <!--My JavaScript Project Ends Here-->
+    </div>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+    <!--<a class="btn btn-lg btn-primary" href="../components/navbar/" role="button">View navbar docs &raquo;</a>-->
+  </div>
+</main>
+
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!--FOOTER STARTS HERE-->
+    <!-- The <svg> lines below is to import the pictures of logos. The paths can be obtained from here: https://icons.getbootstrap.com/ -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="bootstrap" viewBox="0 0 118 94">
+        <title>Bootstrap</title>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </symbol>
+      <symbol id="linkedin" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+      </symbol>
+      <symbol id="github" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </symbol>
+      <symbol id="tiktok" viewBox="0 0 16 16">
+        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+      </symbol>
+    </svg>
+
+    <!-- This line below puts a divider line that shows the footer is below it.-->
+    <div class="b-example-divider"></div>
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="https://getbootstrap.com/docs/5.3/examples/" target="_blank" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">&copy; 2023 Naushad Sayeed</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/naushad.sayeed/" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/naushadsayeed/" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#linkedin"/></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://twitter.com/naushadsayeed" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/naushadsayeed/" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+          <!--<li class="ms-3"><a class="text-muted" href="https://github.com/naushadsayeed" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#github"/></svg></a></li>-->
+          <li class="ms-3"><a class="text-muted" href="https://www.tiktok.com/@naushad_sayeed" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#tiktok"/></svg></a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

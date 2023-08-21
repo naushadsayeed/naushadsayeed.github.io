@@ -1,0 +1,16 @@
+{
+    "opentag":"<table>",
+    "name_opentag":"<tr><th colspan='2'>",
+    "name_closetag": "</th></tr>",
+    "description_opentag":"<tr><th>Description</th><td>",
+    "description_closetag": "</td></tr>",
+    "temperature_opentag": "<tr><th>Temperature</th><td>",
+    "temperature_closetag": "</td></tr>",
+    "feels_like_opentag":"<tr><th>Feels like</th><td>",
+    "feels_like_closetag":"</td></tr>",
+    "humidity_opentag":"<tr><th>Humidity</th><td>", 
+    "humidity_closetag": "</td></tr>",
+    "visibility_opentag":"<tr><th>Visibility</th><td>",
+    "visibility_closetag": "</td></tr>",
+    "closetag":"</table><br>"
+}
