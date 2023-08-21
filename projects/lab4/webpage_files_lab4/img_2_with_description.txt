@@ -1,2 +1,0 @@
-<div id="#image_with_description"><img src="./images/Ryerson_Engineering_Building.jpeg" alt="Ryerson Engineering Building" style="height:300px"></div>
-<p>I'm currently Ryerson Computer Science who's heading into my fourth year. I used to be in the Image Arts Photography program before I got accepted to the Computer Science program. The computer science classes mostly happens in this building of Ryerson, known as "George Vari Engineering and Computing Centre".</p>
